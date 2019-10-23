@@ -23,7 +23,7 @@ RUN wget --no-verbose -O /tmp/chromedriver_linux64.zip https://chromedriver.stor
 
 # Xvfb
 
-RUN apt-get install debian-archive-keyring
+RUN apt-get install debian-archive-keyring \
 && apt-get update -qqy \
 && apt-get -qqy install xvfb \
 && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
