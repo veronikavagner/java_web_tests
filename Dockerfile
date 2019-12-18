@@ -28,4 +28,5 @@ RUN apt-get install debian-archive-keyring \
 && apt-get -qqy install xvfb \
 && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
 
-
+RUN apt-get update -qqy \
+&& apt-get -qqy install expect
